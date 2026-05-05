@@ -19,5 +19,46 @@ Alat ini mengintegrasikan data Shodan dengan Google Maps API untuk analisis loka
   2. Google Maps API Key (Dapatkan di Google Cloud Console).
   
 ## ​Panduan Instalasi
-​1. Setup Folder Proyek
+​1. **Setup Folder Proyek**
 ​Buka terminal Xubuntu Bos dan jalankan :
+```
+mkdir cctv-pro-maps && cd cctv-pro-maps
+```
+2. **Instalasi Dependensi**
+​Inisialisasi Node.js dan pasang library yang diperlukan :
+```
+npm init -y
+npm install express axios dotenv nedb path
+```
+3. **Konfigurasi API (.env)**
+- ​Buat file bernama .env di direktori utama :
+```
+nano .env
+```
+- Masukkan kunci API Bos ke dalam file tersebut :
+```
+SHODAN_API_KEY=MASUKKAN_KEY_SHODAN_BOS
+GOOGLE_MAPS_API_KEY=MASUKKAN_KEY_GOOGLE_MAPS_BOS
+PORT=3000
+```
+
+## Cara Pengoperasian
+1. **Menjalankan Server :**
+```
+node server.js
+```
+2. **Akses Dashboard :**
+Buka browser dan arahkan ke alamat
+```
+http://localhost:3000.
+```
+3. **Eksekusi Scan :**
+- ​Ketik nama kota (contoh: "Jakarta") atau pilih vendor tertentu.
+- Klik EXECUTE HARVEST untuk memulai pemindaian.
+- ​Gunakan tombol LOCATE untuk melakukan zoom-in ke posisi perangkat di peta.
+
+## (Disclaimer)
+
+​Alat ini dibuat oleh (SPY-E) untuk tujuan Edukasi, OSINT, dan Riset Keamanan Siber. Penggunaan alat ini untuk tindakan ilegal yang melanggar hukum privasi atau UU ITE sepenuhnya menjadi tanggung jawab pengguna. Selalu gunakan VPN untuk lapisan keamanan tambahan saat melakukan riset jaringan.
+
+​© 2026 SPY-E | 123Tool Project
