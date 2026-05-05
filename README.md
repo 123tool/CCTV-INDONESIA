@@ -1,4 +1,4 @@
-## Intelijen Visual & Geo-Spatial OSINT Dashboard
+## Intelijen Indonesia & CCTV OSINT Dashboard
 
 **​Tool riset keamanan siber yang dirancang untuk memetakan perangkat IoT (CCTV) yang terkonfigurasi secara publik di wilayah Indonesia dan global.**
 
